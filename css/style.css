@@ -1,139 +1,121 @@
-@media print {
-  .container {
-    width: auto;
-  }
-}
-/* Template-specific stuff
- *
- * Customizations just for the template; these are not necessary for anything
- * with disabling the responsiveness.
- */
-/* Account for fixed navbar */
-body {
-  min-width: 980px;
+/* reset */
+* {
+  outline: none;
 }
 
-/* Don't let the lead text change font-size. */
-.lead {
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* buttons */
+/* fonts */
+/*
+* header
+*/
+.header {
+  padding: 23px 0 90px 0;
+  background-image: url(../img/fig1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+.header_title {
+  line-height: 73px;
+  color: #000;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header_get_acquainted {
+  margin-top: 40px;
+  padding: 70px 75px;
+  background: #fff;
+  background-color: rgba(255, 255, 255, 0.71);
+}
+.header_get_acquainted__title {
+  margin-bottom: 50px;
+  color: #1E71B8;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header_get_acquainted__text p {
+  color: #000;
+  font-family: "PT Sans Narrow";
   font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
-
-/* Finesse the page header spacing */
-.page-header {
+.header_get_acquainted__text p:first-child {
   margin-bottom: 30px;
 }
-
-.page-header .lead {
-  margin-bottom: 10px;
+.header_tv__img {
+  margin: 125px auto 35px;
 }
-
-/* Non-responsive overrides
- *
- * Utilitze the following CSS to disable the responsive-ness of the container,
- * grid system, and navbar.
- */
-/* Reset the container */
-.container {
-  width: 980px;
-  max-width: none !important;
+.header_tv__text {
+  color: #000;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-
-/* disable navbar margins */
-.container .navbar-header,
-.container .navbar-collapse {
-  margin-right: 0;
-  margin-left: 0;
+.header_step {
+  position: relative;
 }
-
-/* Always float the navbar header */
-.navbar-header {
-  float: left;
+.header_step__title {
+  margin: 133px 0 30px;
+  color: #1E71B8;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-
-/* Undo the collapsing navbar */
-.navbar-collapse {
-  display: block !important;
-  height: auto !important;
-  padding-bottom: 0;
-  overflow: visible !important;
+.header_step__text {
+  color: #000;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
-
-.navbar-toggle {
-  display: none;
+.header_step__text b {
+  font-family: "PT Sans Narrow Bold";
 }
-
-.navbar-collapse {
-  border-top: 0;
+.header_step__input input {
+  width: 100%;
+  padding: 15px 0 12px 20px;
+  margin-top: 30px;
+  background-color: #FFF;
+  border: 1px solid #D9E3EC;
+  border-radius: 2px;
+  color: #696969;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
 }
-
-.navbar-brand {
-  margin-left: -15px;
+.header_step__cover img {
+  margin: 0 auto;
 }
-
-/* Always apply the floated nav */
-.navbar-nav {
-  float: left;
-  margin: 0;
-}
-
-.navbar-nav > li {
-  float: left;
-}
-
-.navbar-nav > li > a {
-  padding: 15px;
-}
-
-/* Redeclare since we override the float above */
-.navbar-nav.navbar-right {
-  float: right;
-}
-
-/* Undo custom dropdowns */
-.navbar .navbar-nav .open .dropdown-menu {
+.header_step__button {
+  cursor: pointer;
   position: absolute;
-  float: left;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-width: 0 1px 1px;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
-
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #333;
-}
-
-.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
-.navbar .navbar-nav .open .dropdown-menu > .active > a,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #fff !important;
-  background-color: #428bca !important;
-}
-
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-  color: #999 !important;
-  background-color: transparent !important;
-}
-
-/* disable scroll padding right on modal and put modal on other elements upper*/
-.modal-open {
-  padding-right: 0 !important;
-}
-
-.modal {
-  z-index: 999;
-  padding-right: 0 !important;
-}
-
-/* disable default bootstrap form input box shadow on focus */
-.form-control:focus {
-  box-shadow: none !important;
+.header_step__button___text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #000;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

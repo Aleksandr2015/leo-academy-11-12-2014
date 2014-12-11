@@ -1,14 +1,10 @@
-// -> Bootstrap base disable if no need
-    // styles for print
-    @import "../vendor/bootstrap/print";
-    // disable the responsiveness to 980px change if need
-    @import "../vendor/bootstrap/non-responsive";
-    // basic bootstrap reset
-    @import "../vendor/bootstrap/bootstrap_reset";    
+//reset
+@import "base/reset";
 
 //avg core sass
 @import "core";
 
 // -> Project parts styles
-//@import "/project/___";
+@import "project/00-reused";
+@import "project/01-header";
 
