@@ -1,18 +1,38 @@
-/* buttons */
-button_cust
-
-.button_cust {
-    
+/* button style */
+._button_cust {
+    background-color: #EAC600;
+    background-image: -moz-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+    background-image: -o-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+    background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+    background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
+    border-radius: 2px;    
+    color: #000;
+    font-family: "PT Sans Narrow Bold";
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
 }
 
-._topbottom {
-    
+._title_blue {    
+    color: #1E71B8;
+    font-family: "PT Sans Narrow Bold";
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-._incontent {
-    
+._title_black {    
+    color: #000;
+    font-family: "PT Sans Narrow Bold";
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-/* fonts */
-//$fsn: PT Sans Narrow;
-//$fsnb: PT Sans Narrow Bold;
+span.bl-text {
+    color: #000;
+}
