@@ -3,5 +3,21 @@
 */
 
 .learn_how_to_build {
-    
+    padding: 76px 0 86px;
+    background-image: url(../img/fig18.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    &_text {
+        margin: 140px 0 15px;
+        color: #000;
+        font-family: "PT Sans Narrow";
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &_text b {
+        font-family: "PT Sans Narrow Bold";
+        font-weight: 400;
+    }
 }

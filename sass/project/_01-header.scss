@@ -59,10 +59,13 @@
             text-transform: uppercase;
         }
     }
-    &_step {
+    &_steps {
+        padding-top: 133px;
         position: relative;
+    }
+    &_step {        
         &__title {
-            margin: 133px 0 30px;
+            margin-bottom: 30px;
             color: #1E71B8;
             font-family: "PT Sans Narrow Bold";
             font-size: 28px;
@@ -82,7 +85,7 @@
         }
         &__input input  {            
             width: 100%;
-            padding: 15px 0 12px 20px;            
+            padding: 13px 0 11px 20px;            
             margin-top: 30px;
             background-color: #FFF;
             border: 1px solid #D9E3EC;
@@ -94,21 +97,32 @@
             font-weight: 400;
         }
         &__cover img {
-            margin: 0 auto;
+            margin: 66px auto;
         }
         &__button {
+            width: 330px;
+            height: 76px;
+            margin-top: 30px;
+            background-image: url(/img/fig4.png);
+            background-repeat: no-repeat;
+            background-size: 330px 76px;
+            background-position: 0 0;
+            background-attachment: scroll;
+        }        
+        &__button input {            
+            border: none;
+            background: transparent;            
+            border-radius: none;    
+            height: 44px;
+            width: 300px;
+            color: #000;
+            font-family: "PT Sans Narrow Bold";
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
             cursor: pointer;
-            position: absolute;
-            &___text {
-                position: absolute;
-                top:10px;
-                left:10px;
-                color: #000;
-                font-family: "PT Sans Narrow Bold";
-                font-size: 20px;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
         }
+        
     }
 }

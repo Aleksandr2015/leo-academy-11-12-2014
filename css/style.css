@@ -45,6 +45,12 @@ span.bl-text {
   color: #000;
 }
 
+.fsError {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
 /*
 * header
 */
@@ -100,11 +106,12 @@ span.bl-text {
   font-weight: 700;
   text-transform: uppercase;
 }
-.header_step {
+.header_steps {
+  padding-top: 133px;
   position: relative;
 }
 .header_step__title {
-  margin: 133px 0 30px;
+  margin-bottom: 30px;
   color: #1E71B8;
   font-family: "PT Sans Narrow Bold";
   font-size: 28px;
@@ -124,7 +131,7 @@ span.bl-text {
 }
 .header_step__input input {
   width: 100%;
-  padding: 15px 0 12px 20px;
+  padding: 13px 0 11px 20px;
   margin-top: 30px;
   background-color: #FFF;
   border: 1px solid #D9E3EC;
@@ -136,21 +143,31 @@ span.bl-text {
   font-weight: 400;
 }
 .header_step__cover img {
-  margin: 0 auto;
+  margin: 66px auto;
 }
 .header_step__button {
-  cursor: pointer;
-  position: absolute;
+  width: 330px;
+  height: 76px;
+  margin-top: 30px;
+  background-image: url(/img/fig4.png);
+  background-repeat: no-repeat;
+  background-size: 330px 76px;
+  background-position: 0 0;
+  background-attachment: scroll;
 }
-.header_step__button___text {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.header_step__button input {
+  border: none;
+  background: transparent;
+  border-radius: none;
+  height: 44px;
+  width: 300px;
   color: #000;
   font-family: "PT Sans Narrow Bold";
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /*
@@ -296,9 +313,42 @@ span.bl-text {
 /*
 * learn_how_to_build
 */
+.learn_how_to_build {
+  padding: 76px 0 86px;
+  background-image: url(../img/fig18.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.learn_how_to_build_text {
+  margin: 140px 0 15px;
+  color: #000;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  font-weight: 400;
+}
+.learn_how_to_build_text b {
+  font-family: "PT Sans Narrow Bold";
+  font-weight: 400;
+}
+
 /*
 * stay_connected
 */
+.stay_connected {
+  padding: 90px 0 80px;
+}
+.stay_connected_social_icons {
+  margin-top: 70px;
+}
+.stay_connected_social_icons__icon {
+  margin-left: -59px;
+}
+.stay_connected_social_icons a:first-child .stay_connected_social_icons__icon {
+  margin-left: 0;
+}
+
 /*
 * footer
 */
@@ -319,6 +369,7 @@ span.bl-text {
 }
 .footer_links__link:hover, .footer_links__link:active, .footer_links__link:focus {
   text-decoration: none;
+  color: #fff;
 }
 .footer_links__divider {
   margin-left: 15px;

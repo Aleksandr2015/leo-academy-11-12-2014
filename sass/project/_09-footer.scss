@@ -13,9 +13,10 @@
             font-size: 16px;
             font-weight: 700;
             text-transform: uppercase;      
-            cursor: pointer;
+            cursor: pointer;            
             &:hover, &:active, &:focus {
                 text-decoration: none;
+                color: #fff;
             }
         }
         &__divider {

@@ -3,5 +3,17 @@
 */
 
 .stay_connected {
-    
+    padding: 90px 0 80px;
+    &_title {
+        
+    }
+    &_social_icons {
+        margin-top: 70px;
+        &__icon {
+            margin-left: -59px;            
+        }
+    }
+    &_social_icons a:first-child .stay_connected_social_icons__icon {
+        margin-left: 0;
+    }
 }
