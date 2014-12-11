@@ -1,0 +1,15 @@
+/*
+* books_of_leonid_bugaev_title
+*/
+
+.reviews_graduates_title {
+    height: 171px;
+    width: 100%;
+    background-image: url(../img/fig10.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    &_title {
+        line-height: 171px;    
+    }
+}

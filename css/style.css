@@ -243,14 +243,56 @@ span.bl-text {
 }
 
 /*
-* key_programms
+* key_programms_title
+*/
+.key_programms_title {
+  height: 171px;
+  width: 100%;
+  background-image: url(../img/fig8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+.key_programms_title_title {
+  line-height: 171px;
+}
+
+/*
+* key_programms_content
 */
 /*
-* books_of_leonid_bugaev
+* books_of_leonid_bugaev_title
+*/
+.books_of_leonid_bugaev_title {
+  height: 171px;
+  width: 100%;
+  background-image: url(../img/fig9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+.books_of_leonid_bugaev_title_title {
+  line-height: 171px;
+}
+
+/*
+* books_of_leonid_bugaev_content
 */
 /*
-* reviews_graduates
+* books_of_leonid_bugaev_title
 */
+.reviews_graduates_title {
+  height: 171px;
+  width: 100%;
+  background-image: url(../img/fig10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+.reviews_graduates_title_title {
+  line-height: 171px;
+}
+
 /*
 * learn_how_to_build
 */
@@ -260,5 +302,27 @@ span.bl-text {
 /*
 * footer
 */
+.footer {
+  background-color: #1E71B8;
+  padding: 45px 0;
+}
+.footer_links {
+  color: #fff;
+}
+.footer_links__link {
+  color: #FFF;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.footer_links__link:hover, .footer_links__link:active, .footer_links__link:focus {
+  text-decoration: none;
+}
+.footer_links__divider {
+  margin-left: 15px;
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
