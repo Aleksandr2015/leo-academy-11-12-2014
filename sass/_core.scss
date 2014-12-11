@@ -1,0 +1,601 @@
+// Sass parts of css collected by Aleksandr Honcharov
+
+// любой валидный css  работает в sass
+// как следствие любой css код обратносовместим c sass (очень полезно для рефакторинга)
+
+// - - - Vars - - -
+//$lime: lime;
+//$red: red;
+//$blue: blue;
+
+// - - - Nesting - - -
+// Для BEM методологии самое то
+// большая вложенность - плохо. 2-3 оптимальный максимум
+//.block {
+//    position: relative;
+//    &_element{
+//        position: absolute;
+//        top: 0;
+//        left: 0;
+//        &__modifier {
+//            color: #ccc;
+//            
+//            &:hover{
+//                color: #000;
+//            }            
+//            
+//            //media
+//            //@media (min-width: 500) {
+//            //    color: grey;
+//            //}
+//        }
+//    }
+//}
+
+
+// /* margin-top 0-100 (px) */
+//@for $i from 0 through 100 {
+//    .mt#{$i}px { margin-top: $i + px; }
+//}
+//Result: 
+//.mt0px {margin-top: 0px;}
+//.mt1px {margin-top: 1px;}
+//.mt2px { margin-top: 100px;}
+
+
+
+//- - - Mixins - - -
+
+    // - Silenko Rostislav (.psd font scale): -
+    //@mixin fsscale($fs, $scale) {
+    //    font-size: $fs * $scale;
+    //}
+    // - - Usage: - -
+    //.some-class {
+    //    @include font-size-scale(30px, 0.3);
+    //}
+    // - - Output: - -
+    //.some-class {
+    //  font-size: 9px;
+    //}
+
+    // STYLING RESPONSIVE FONT-SIZES WITH A SASS MIXIN (Пока что не разобрался как работает): 
+    //@mixin fsresponsive (
+    //     $level-full:      $base-font-size
+    //  ,  $level-all:       NULL
+    //  ,  $level-ipad:      NULL
+    //  ,  $level-nook:      NULL
+    //  ,  $level-landscape: NULL
+    //  ,  $level-portrait:  NULL
+    //)
+    //{
+    //
+    //  font-size: $level-full;
+    //
+    //  @if $level-all != NULL {
+    //    // Everything below full size ($site-width - 1)
+    //    @include responsive(all) {
+    //      font-size: $level-all;
+    //    }
+    //  }
+    //  @if $level-ipad != NULL {
+    //    // iPad level - everything below 960 grid (max-width: 959px)
+    //    @include responsive(less-than-grid) {
+    //      font-size: $level-ipad;
+    //    }
+    //  }
+    //  @if $level-nook != NULL {
+    //    // 7" tablet level - everything below iPad (max-width: 767px)
+    //    @include responsive(less-than-ipad) {
+    //      font-size: $level-nook;
+    //    }
+    //  }
+    //  @if $level-landscape != NULL {
+    //    // Mobile Landscape level - everything below 7" tablet (max-width: 599px)
+    //    @include responsive(less-than-nook) {
+    //      font-size: $level-landscape;
+    //    }
+    //  }
+    //  @if $level-portrait != NULL {
+    //    // 7" tablet level - everything below mobile landscape (max-width: 479px)
+    //    @include responsive($portrait) {
+    //      font-size: $level-portrait;
+    //    }
+    //  }
+    //}
+
+    // - Responsive Breakpoints -
+    //@mixin breakpoint($point) {
+    //  @if $point == large {
+    //    @media (min-width: 64.375em) { @content; }
+    //  }
+    //  @else if $point == medium {
+    //    @media (min-width: 50em) { @content; }
+    //  }
+    //  @else if $point == small {
+    //    @media (min-width: 37.5em)  { @content; }
+    //  }
+    //}
+    // - - Usage: - -
+    //.page-wrap {
+    //  width: 75%;
+    //  @include breakpoint(large) { width: 60%; }
+    //  @include breakpoint(medium) { width: 80%; }
+    //  @include breakpoint(small) { width: 95%; }
+    //}
+    // - - Output: - -
+    //.page-wrap {
+    //  width: 75%;
+    //}
+    //@media (min-width: 64.375em) {
+    //  .page-wrap {
+    //    width: 60%;
+    //  }
+    //}
+    //@media (min-width: 50em) {
+    //  .page-wrap {
+    //    width: 80%;
+    //  }
+    //}
+    //@media (min-width: 37.5em) {
+    //  .page-wrap {
+    //    width: 95%;
+    //  }
+    //}
+
+
+    // - Retina Images -
+    //This mixin by Jason Zimdars is a breeze to use and offers a greater visual experience to those that are lucky enough to have a retina device.
+    //http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss
+    //@mixin image-2x($image, $width, $height) {
+    //  @media (min--moz-device-pixel-ratio: 1.3),
+    //         (-o-min-device-pixel-ratio: 2.6/2),
+    //         (-webkit-min-device-pixel-ratio: 1.3),
+    //         (min-device-pixel-ratio: 1.3),
+    //         (min-resolution: 1.3dppx) {
+    //    /* on retina, use image that's scaled by 2 */
+    //    background-image: url($image);
+    //    background-size: $width $height;
+    //  }
+    //}
+    // - - Usage: - -
+    //div.logo {
+    //   background: url("logo.png") no-repeat;
+    //   @include image-2x("logo2x.png", 100px, 25px);
+    // }
+    // - - Output: - -
+    //div.logo {
+    //  background: url("logo.png") no-repeat;
+    //}
+    //@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+    //  div.logo {
+    //    /* on retina, use image that's scaled by 2 */
+    //    background-image: url("logo2x.png");
+    //    background-size: 100px 25px;
+    //  }
+    //}
+
+
+    // - Clearfix -    
+    @mixin clearfix() {
+        *zoom:1;
+        &:before,
+        &:after {
+            content: "";
+            display: table;
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    // - - Usage: - -    
+    //.article {
+    //     @include clearfix();
+    //}
+    // - - Output: - -    
+    //.article {
+    //  *zoom: 1;
+    //}
+    //.article:before, .article:after {
+    //  content: "";
+    //  display: table;
+    //}
+    //.article:after {
+    //  clear: both;
+    //}
+
+
+    // - Box Sizing - 
+    //Reset your elements box model with ease.
+    //@mixin box-sizing($box-model) {
+    //  -webkit-box-sizing: $box-model; // Safari <= 5
+    //     -moz-box-sizing: $box-model; // Firefox <= 19
+    //          box-sizing: $box-model;
+    //}
+    // - - Usage: - -
+    //*,
+    //*:after,
+    //*:before {
+    //  @include box-sizing(border-box);
+    //}
+    // - - Output: - -
+    //*,
+    //*:after,
+    //*:before {
+    //  -webkit-box-sizing: border-box;
+    //  -moz-box-sizing: border-box;
+    //  box-sizing: border-box;
+    //}
+
+    // - Border Radius -
+    //Always a handy mixin. Set every border radius or just a single side without worrying about all those prefixes.
+    @mixin border-radius($radius) {
+      -webkit-border-radius: $radius;
+      border-radius: $radius;
+      background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+    }
+    // Single side border-radius
+    @mixin border-top-radius($radius) {
+      -webkit-border-top-right-radius: $radius;
+      border-top-right-radius: $radius;
+       -webkit-border-top-left-radius: $radius;
+       border-top-left-radius: $radius;
+       background-clip: padding-box;
+    }
+    @mixin border-right-radius($radius) {
+      -webkit-border-bottom-right-radius: $radius;
+      border-bottom-right-radius: $radius;
+         -webkit-border-top-right-radius: $radius;
+         border-top-right-radius: $radius;
+         background-clip: padding-box;
+    }
+    @mixin border-bottom-radius($radius) {
+      -webkit-border-bottom-right-radius: $radius;
+      border-bottom-right-radius: $radius;
+       -webkit-border-bottom-left-radius: $radius;
+       border-bottom-left-radius: $radius;
+       background-clip: padding-box;
+    }
+    @mixin border-left-radius($radius) {
+      -webkit-border-bottom-left-radius: $radius;
+      border-bottom-left-radius: $radius;
+         -webkit-border-top-left-radius: $radius;
+         border-top-left-radius: $radius;
+         background-clip: padding-box;
+    }
+    // - - Usage: - - 
+    //.button {
+    //  @include border-radius(5px);
+    //}
+    //.submit-button {
+    //  @include border-top-radius(10px);
+    //  @include border-right-radius(8px);
+    //  @include border-bottom-radius(10px);
+    //  @include border-left-radius (6px);
+    //}
+    // - - Output: - -
+    //.button {
+    //  -webkit-border-radius: 5px;
+    //  border-radius: 5px;
+    //  background-clip: padding-box;
+    //  /* stops bg color from leaking outside the border: */
+    //}
+    //.submit-button {
+    //  -webkit-border-top-right-radius: 10px;
+    //  border-top-right-radius: 10px;
+    //  -webkit-border-top-left-radius: 10px;
+    //  border-top-left-radius: 10px;
+    //  background-clip: padding-box;
+    //}
+
+    // - Opacity -
+    //Set the opacity for all browsers and provide a filter fallback for IE8.
+    @mixin opacity($opacity) {
+      opacity: $opacity;
+      $opacity-ie: $opacity * 100;
+      filter: alpha(opacity=$opacity-ie); //IE8
+    }
+    // - - Usage: - - 
+    //.article-heading {
+    //  @include opacity(0.8);
+    //}
+    // - - Output: - - 
+    //.article-heading {
+    //  opacity: 0.8;
+    //  filter: alpha(opacity=0.8);
+    //}
+
+    // - Center-align a block level element - 
+    //Quickly center any element within its parent. Requires width or max-width to be set.
+    @mixin center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    // - - Usage: - -
+    //
+    //.footer-wrap {
+    //  width: 450px;
+    //  @include center-block;
+    //}
+    // - -Output: - -
+    //.footer-wrap {
+    //  width: 450px;
+    //  display: block;
+    //  margin-left: auto;
+    //  margin-right: auto;
+    //}
+
+    // - Text Overflow - 
+    //An easy way to truncate text with an ellipsis. Requires the element to be block or inline-block.
+    @mixin text-truncate {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    // - - Usage: - - 
+    //.text-truncate {
+    //  @include text-truncate;
+    //}
+    // - - Output: - -
+    //.text-truncate {
+    //  overflow: hidden;
+    //  text-overflow: ellipsis;
+    //  white-space: nowrap;
+    //}
+
+    // - Absolute Positioned - 
+    //Pass in the desired location of your target element to produce all the necessary positioning code.
+    @mixin p-abs ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+      top: $top;
+      right: $right;
+      bottom: $bottom;
+      left: $left;
+      position: absolute;
+    }
+    // - - Usage: - - 
+    //
+    //.abs {
+    //  @include p-abs(10px, 10px, 5px, 15px);
+    //}
+    // - - Output: - - 
+    //.abs {
+    //  top: 10px;
+    //  right: 10px;
+    //  bottom: 5px;
+    //  left: 15px;
+    //  position: absolute;
+    //}
+
+    // - Font Size - 
+    //This mixin sets the font size in rem's with a px fallback.
+    @mixin fspxrem($sizeValue: 12 ){
+      font-size: $sizeValue + px; //fallback for old browsers
+      font-size: (0.125 * $sizeValue) + rem;
+    }
+    // - - Usage: - - 
+    //
+    //body {
+    // @include fspxrem(14);
+    //}
+    // - - Output: - -
+    //body {
+    //  font-size: 16px;
+    //  font-size: 2rem;
+    //}
+
+    // - Font Size - Set a rem font size with pixel fallback
+    @function calculateRem($size) {
+      $remSize: $size / 16px;
+      @return $remSize * 1rem;
+    }
+    @mixin fspxrem2($size) {
+      font-size: $size;
+      font-size: calculateRem($size);
+    }
+    // - - Usage: - - 
+    //    p {
+    //      @include fspxrem2(14px)
+    //    }
+    // - - Output: - -
+    //    p {
+    //      font-size: 14px; //Will be overridden if browser supports rem
+    //      font-size: 0.8rem;
+    //    }
+
+    // - Line Height - 
+    //This mixin sets the line height in rem's with a px fallback.
+    @mixin lhpxrem($heightValue: 12 ){
+    	line-height: $heightValue + px; //fallback for old browsers
+    	line-height: (0.125 * $heightValue) + rem;
+    }
+    // - - Usage: - - 
+    //body {
+    //  @include lhpxrem(16);
+    //}
+    // - - Output: - -
+    //body {
+    //  line-height: 16px;
+    //  line-height: 2rem;
+    //}
+
+//The Viewport Percentage Lengths
+//- vw - 
+//.wrap {
+//  width: 10vw;
+//}
+//This is the "viewport width" unit. 1vw is equal to 1% of the width of the viewport. It is similar to percentage, except that the value remains consistant for all elements regardless of their parent elements or parent elements width. A bit like how rem units are always relative to the root.
+//Sizing type is the major use case here. See Viewport Sized Typography.
+//Notable browser support issues: No support in any mobile browsers except the very latest iOS 6. This goes for all the viewport related length units.
+//- vh - 
+//.wrap {
+//  width: 10vh;
+//}
+//This is the same as the vw (viewport width) unit only it is based on the viewport height instead.
+//- vmin - 
+//.wrap {
+//  width: 20vmin;
+//}
+//This value will be whichever is smaller at the moment, vw or vh. In the standard use case of sizing type, this may be a more useful metric than vw or vh on their own in determining true screen size.
+//
+//- vmax - 
+//.wrap {
+//  width: 20vmax;
+//}
+//This value will be whichever is larger at the moment, vw or vh.
+//Notable browser support issues: WebKit based browsers support vmin but not vmax (yet). Firefox does support vmax though.
+
+// A Quick Useful Case for Sass Math and Mixins
+// Source http://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/
+
+    // - Animations and keyframes - 
+    //Animations are always a pain to create with all the vendor prefixes and what not. But with the help of this mixin it will boil down to just a few lines of code.
+    // Source: http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+    @mixin keyframes($animation-name) {
+      @-webkit-keyframes $animation-name {
+        @content;
+      }
+      @-moz-keyframes $animation-name {
+        @content;
+      }  
+      @-ms-keyframes $animation-name {
+        @content;
+      }
+      @-o-keyframes $animation-name {
+        @content;
+      }  
+      @keyframes $animation-name {
+        @content;
+      }
+    }
+    @mixin animation($str) {
+      -webkit-animation: #{$str};
+      -moz-animation: #{$str};
+      -ms-animation: #{$str};
+      -o-animation: #{$str};
+      animation: #{$str};      
+    }
+    // - - Usage: - - 
+    //@include keyframes(slide-down) {
+    //  0% { opacity: 1; }
+    //  90% { opacity: 0; }
+    //}
+    //.element {
+    //  width: 100px;
+    //  height: 100px;
+    //  background: black;
+    //  @include animation('slide-down 5s 3');
+    //}
+    // - - Output: - - 
+    //@-webkit-keyframes $animation-name {
+    //  0% {
+    //    opacity: 1;
+    //  }
+    //  90% {
+    //    opacity: 0;
+    //  }
+    //}
+    //@-ms-keyframes $animation-name {
+    //  0% {
+    //    opacity: 1;
+    //  }
+    //  90% {
+    //    opacity: 0;
+    //  }
+    //}
+    //@keyframes $animation-name {
+    //  0% {
+    //    opacity: 1;
+    //  }
+    //  90% {
+    //    opacity: 0;
+    //  }
+    //}
+    //.element {
+    //  width: 100px;
+    //  height: 100px;
+    //  background: black;
+    //  -webkit-animation: slide-down 5s 3;
+    //  -ms-animation: slide-down 5s 3;
+    //  animation: slide-down 5s 3;
+    //}
+
+    // - Transitions - 
+    // Source: http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+    //As with animations, transitions also make your code quite bloated which can hurt the readability. But this is also solved by using a mixin for it.
+    @mixin transition($args...) {
+      -webkit-transition: $args;
+      -moz-transition: $args;
+      -ms-transition: $args;
+      -o-transition: $args;
+      transition: $args;
+    }
+    // - - Usage: - -
+    //a {
+    //  color: gray;
+    //  @include transition(color .3s ease);
+    //  &:hover {
+    //    color: black;
+    //  }
+    //}
+    // - - Output: - - 
+    //a {
+    //  color: gray;
+    //  -webkit-transition: color 0.3s ease;
+    //  transition: color 0.3s ease;
+    //}
+    //a:hover {
+    //  color: black;
+    //}
+
+    // - Cross browser opacity - 
+    // Source: http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+    @mixin opacity($opacity) {
+      opacity: $opacity;
+      $opacity-ie: $opacity * 100;
+      filter: alpha(opacity=$opacity-ie); //IE8
+    }
+    // - - Usage: - -
+    //.faded-text {
+    //  @include opacity(0.8);
+    //}
+    // - - Output: - -
+    //.faded-text {
+    //  opacity: 0.8;
+    //  filter: alpha(opacity=80);
+    //}
+
+    // - Visually hide an element
+    //When you hide an element with display: none, that prevents screen readers from reading it to the user. Sometimes that’s fine, but in other cases this will make the site hard to use for people with screen readers. Thus, we have to use another technique for hiding elements while at the same time make them accessible.
+    //In this example, we are using the Sass placeholder selector since the output will always be the same, which enables us to reduce repetetive code in the output.
+    //Placeholder Selector:
+    %visuallyhidden {
+      margin: -1px;
+      padding: 0;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      clip: rect(0, 0, 0, 0);
+      position: absolute;
+    }
+    // - - Usage (html): - -
+    //<button class="mobile-navigation-trigger">
+    //  <b class="visually-hidden">Open the navigation</b>
+    //  <img src="img/mobile-navigation-icon.svg">
+    //</button>
+    // - - Usage (scss): - -
+    //.visually-hidden {
+    //  @extend %visuallyhidden;
+    //}
+    // - - Output: - -
+    //.visually-hidden {
+    //  margin: -1px;
+    //  padding: 0;
+    //  width: 1px;
+    //  height: 1px;
+    //  overflow: hidden;
+    //  clip: rect(0 0 0 0);
+    //  clip: rect(0, 0, 0, 0);
+    //  position: absolute;
+    //}

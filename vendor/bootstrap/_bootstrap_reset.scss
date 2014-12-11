@@ -1,0 +1,14 @@
+/* disable scroll padding right on modal and put modal on other elements upper*/
+.modal-open {
+    padding-right: 0 !important;
+}
+.modal {
+    z-index: 999;
+    padding-right: 0 !important;
+}
+
+/* disable default bootstrap form input box shadow on focus */
+
+.form-control:focus {
+     box-shadow: none !important;
+}
