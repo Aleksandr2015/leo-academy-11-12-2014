@@ -9,6 +9,171 @@ html, body {
   background: #fff;
 }
 
+/* media quaries */
+/* lg - Large devices (large desktops, 1100px and up) */
+@media all and (max-width: 1100px) {
+  /* header */
+  .header_logo {
+    margin: 0 auto !important;
+  }
+
+  .header_title {
+    text-align: center !important;
+    line-height: 55px !important;
+  }
+
+  .header_get_acquainted {
+    margin-top: 20px !important;
+    padding: 29px 35px !important;
+  }
+
+  .header_tv__img {
+    margin-top: 55px !important;
+  }
+
+  .header_steps {
+    padding-top: 0px !important;
+  }
+
+  .header_step__title {
+    margin-top: 55px !important;
+  }
+
+  .header_step__input {
+    text-align: center !important;
+  }
+
+  .header_step__cover img {
+    margin: 93px auto !important;
+  }
+
+  /* leonid_bugaev */
+  /* academy_of_experts_and_selebs */
+}
+/* md - Medium devices (desktops, 992px and up) */
+@media all and (max-width: 991px) {
+  /* header */
+  .header_logo {
+    margin: 0 auto !important;
+  }
+
+  .header_title {
+    text-align: center !important;
+    line-height: 44px !important;
+    margin-top: 18px !important;
+  }
+
+  .header_get_acquainted__title {
+    text-align: center !important;
+  }
+
+  .header_step__input input {
+    width: 46% !important;
+  }
+
+  .header_step__title {
+    text-align: center !important;
+  }
+
+  .header_step__text {
+    text-align: center !important;
+  }
+
+  .header_step__button {
+    margin: 0 auto !important;
+    position: relative !important;
+    left: 2% !important;
+  }
+
+  .header_step__input input {
+    text-align: center !important;
+    padding: 13px 0 11px 0 !important;
+  }
+
+  /* leonid_bugaev */
+  /* academy_of_experts_and_selebs */
+  .academy_of_experts_and_selebs_title,
+  .academy_of_experts_and_selebs_online__title {
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+
+  .academy_of_experts_and_selebs_title_right {
+    margin-top: 55px !important;
+    text-align: center !important;
+  }
+
+  .fb_iframe_widget {
+    display: table !important;
+    margin: 0 auto !important;
+  }
+}
+/* sm - Small devices (tablets, 768px and up) */
+@media all and (max-width: 768px) {
+  /* header */
+  .header_logo {
+    margin: 0 auto !important;
+  }
+
+  .header_title {
+    text-align: center !important;
+  }
+
+  .header_step__input input {
+    width: 46% !important;
+  }
+
+  .header_step__input input {
+    text-align: center !important;
+    width: 35% !important;
+    padding: 13px 0 11px 0 !important;
+  }
+
+  /* leonid_bugaev */
+  /* academy_of_experts_and_selebs */
+  .academy_of_experts_and_selebs_title {
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+
+  .academy_of_experts_and_selebs_gallery_hr__img {
+    margin: 0 auto !important;
+  }
+}
+/* xs - Extra small devices (mobile phones, 767px and down) */
+@media all and (max-width: 767px) {
+  /* header */
+  .header_logo {
+    margin: 0 auto !important;
+  }
+
+  .header_title {
+    text-align: center !important;
+  }
+
+  .header_step__input {
+    margin: 0 auto !important;
+  }
+
+  .header_step__input input {
+    width: 300px !important;
+  }
+
+  .header_get_acquainted {
+    padding: 20px !important;
+  }
+
+  /* leonid_bugaev */
+  /* academy_of_experts_and_selebs */
+}
+@media all and (max-width: 360px) {
+  /* header */
+  .header_step__button {
+    margin: 0 auto !important;
+    position: relative !important;
+    left: 0px !important;
+  }
+}
 #share42 {
   margin-left: 20px;
 }
@@ -170,10 +335,6 @@ html, body {
   text-transform: uppercase;
 }
 
-._title_20 {
-  margin-left: 20px !important;
-}
-
 span.bl-text {
   color: #000;
 }
@@ -224,6 +385,7 @@ span.bl-text {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  text-align: justify;
 }
 .header_get_acquainted__text p:first-child {
   margin-bottom: 30px;
@@ -416,6 +578,10 @@ span.bl-text {
   text-transform: uppercase;
   color: #000;
   font-size: 24px;
+}
+
+._title_20 {
+  margin-left: 20px;
 }
 
 /*
