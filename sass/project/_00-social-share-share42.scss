@@ -1,0 +1,71 @@
+#share42 {
+    margin-left: 20px;
+}
+
+#share42 .share42-item {
+    width: 140px !important;
+    height: 37px !important;
+    margin: 0 20px 0 0 !important;
+}
+
+#share42 .share42-item a {
+    background:url(../img/fig40.jpg) no-repeat !important;
+    height: 37px !important;
+    width: 37px !important;    
+}
+
+#share42 .share42-item .share42-counter {
+    width: 103px !important;
+    height: 37px !important;
+    margin: 0 !important;
+    background:url(../img/fig40.jpg) no-repeat !important;
+    color: #FFF !important;
+    font-family: "Arial" !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    line-height: 37px !important;
+    padding: 0 0 0 21px !important;
+}
+
+#share42 .share42-item .share42-counter:before,
+#share42 .share42-item .share42-counter:after {
+    display: none !important;
+}
+
+/* facebook */
+#share42 .share42-item:first-child a {
+    background-position: 0 0 !important;
+}
+
+#share42 .share42-item:first-child .share42-counter {
+    background-position: -37px 0 !important;
+}
+
+/* twitter */
+#share42 .share42-item:nth-child(2) a {
+    background-position: -140px 0 !important;
+}
+
+#share42 .share42-item:nth-child(2) .share42-counter {
+    background-position: -177px 0 !important;
+}
+
+/* google plus */
+#share42 .share42-item:nth-child(3) a {
+    background-position: -280px 0 !important;
+}
+
+#share42 .share42-item:nth-child(3) .share42-counter {
+    background-position: -317px 0 !important;
+}
+
+/* vkontakte */
+#share42 .share42-item:nth-child(4) a {
+    background-position: -420px 0 !important;
+}
+
+#share42 .share42-item:nth-child(4) .share42-counter {
+    background-position: -457px 0 !important;
+}
+

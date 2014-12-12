@@ -20,8 +20,20 @@
     <!--[if lt IE 9]>
     <p class="browsehappy">Вы используете <strong>устаревшую</strong> версию браузера, поэтому страница может работать некорректно. Обновить браузер можно <a href="http://browsehappy.com/">по этой ссылке</a> или перейти на сайт http://browsehappy.com</p>
     <![endif]-->
+    <!-- latest jquery version -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body> 
+    <!-- facebook like-box script / start -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=817549038307825&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- facebook like-box script / end -->
 
     <!-- header / start -->
     <header class="header">
@@ -371,7 +383,8 @@
                         Будем дружить
                     </div>
                     <div class="academy_of_experts_and_selebs_facebook">
-                        <img src="/img/fig7.png" width="305" height="295" alt="">
+<!--                  <img src="/img/fig7.png" width="305" height="295" alt="">  -->
+                        <div class="fb-like-box" data-href="https://www.facebook.com/mostcity" data-width="305" data-height="295" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
                     </div>
                 </div>
             </div><!-- .row / end -->
@@ -754,25 +767,8 @@
                     <span class="stay_connected_share">
                         Поделиться ссылкой:
                     </span>
-                    <div id="the_share"></div>
-                    <script src="http://yandex.st/share/share.js"></script>
-                    <script>
-                        new Ya.share({
-                            element: 'the_share',
-                            elementStyle: {
-                                'type': 'none',
-                                'quickServices': ['yaru', 'facebook', 'twitter', 'gplus', 'vkontakte']
-                            },
-                            //theme: 'counter ',
-                //            link: 'http://yoursite.com',
-                //            title: 'Your Name - Your site name',
-                //            serviceSpecific: {
-                //                twitter: {
-                //                    title: '@your_twitter_nickname Текст twitter сообщения',
-                //                }
-                //            }            
-                        });
-                    </script>
+                    <div class="share42init"></div>
+                    <script type="text/javascript" src="http://test.honcharovs.com/vendor/share42/share42.js"></script>
                 </div>
             </div><!-- .row / end -->
         </div><!-- .container / end -->    
@@ -799,8 +795,6 @@
     </footer>
     <!-- footer / end -->
     
-    <!-- latest jquery version -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- bootstrap js -->
     <script src="vendor/bootstrap/3.3.1-custom-responsive/js/bootstrap.min.js"></script>
     <!-- reviews carousel -->
@@ -830,7 +824,6 @@
         });
     });
     </script>
-    
     <!-- fancyBox / end -->
 </body>
 </html>

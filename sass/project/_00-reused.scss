@@ -13,6 +13,14 @@
     text-transform: uppercase;
     display: inline-block;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover, &:active, &:focus {
+        background-image: -moz-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+        background-image: -o-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+        background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+        background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
+	    text-shadow: 1px 1px 3px #999;
+    }
 }
 
 ._title_blue {    

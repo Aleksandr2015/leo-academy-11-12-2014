@@ -1,0 +1,66 @@
+// code in html
+//<div id="the_share"></div>
+//                    <script src="http://yandex.st/share/share.js"></script>
+//                    <script>
+//                        new Ya.share({
+//                            element: 'the_share',
+//                            elementStyle: {
+//                                'type': 'none',
+//                                'quickServices': ['yaru', 'facebook', 'twitter', 'gplus', 'vkontakte']
+//                            },
+//                            //theme: 'counter ',
+//                //            link: 'http://yoursite.com',
+//                //            title: 'Your Name - Your site name',
+//                //            serviceSpecific: {
+//                //                twitter: {
+//                //                    title: '@your_twitter_nickname Текст twitter сообщения',
+//                //                }
+//                //            }            
+//                        });
+//                    </script>
+
+/* social share redesign */
+#the_share {
+    text-align:center;
+    display: table;
+}
+
+#the_share .b-share {
+    height:37px;
+}
+
+#the_share .b-share-icon_yaru,
+#the_share .b-share-icon_vkontakte,
+#the_share .b-share-icon_facebook,
+#the_share .b-share-icon_twitter,
+#the_share .b-share-icon_gplus {
+    width:140px;
+    height:37px;
+    display:block;
+    margin-left: 20px;
+    background:url(../img/fig40.jpg) no-repeat;
+}
+
+#the_share .b-share .b-share__handle {
+    padding:0!important;
+}
+
+#the_share .b-share-icon_yaru {
+    background-position:0 -100px;
+}
+
+#the_share .b-share-icon_vkontakte {
+    background-position:-420px 0;
+}
+
+#the_share .b-share-icon_facebook {
+    background-position:0 0;
+}
+
+#the_share .b-share-icon_twitter {
+    background-position:-140px 0;
+}
+
+#the_share .b-share-icon_gplus {
+    background-position:-280px 0;
+}

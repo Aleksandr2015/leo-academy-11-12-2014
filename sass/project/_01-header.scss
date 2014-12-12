@@ -108,6 +108,10 @@
             background-size: 330px 76px;
             background-position: 0 0;
             background-attachment: scroll;
+            transition: all .3s ease-in-out;
+            &:hover, &:active, &:focus {
+                background-image: url(/img/fig4-1.png);
+            }
         }        
         &__button input {            
             border: none;
@@ -122,6 +126,10 @@
             text-transform: uppercase;
             display: inline-block;
             cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover, &:active, &:focus {
+                text-shadow: 1px 1px 3px #999;
+            }
         }
         
     }

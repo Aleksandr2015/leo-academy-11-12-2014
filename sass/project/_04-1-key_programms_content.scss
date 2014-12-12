@@ -39,9 +39,12 @@
                 font-weight: 700;
                 text-transform: uppercase;
                 cursor: pointer;
+                transition: all .3s ease-in-out;
                 &:hover, &:active, &:focus {
                     text-decoration: none;
                     color: #000;
+                    text-shadow: 1px 1px 3px #999;
+                    background-image: url('/img/fig20-1.png');
                 }
             }
             &___forknowmore {
