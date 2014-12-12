@@ -6,6 +6,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background: #fff;
 }
 
 /* button style */
@@ -210,8 +211,13 @@ span.bl-text {
   color: #a6a8aa;
 }
 .leonid_bugaev_button {
+  display: inline-block;
   padding: 10px 33px 10px;
   margin-top: 50px;
+}
+.leonid_bugaev_button:hover, .leonid_bugaev_button:active, .leonid_bugaev_button:focus {
+  color: #000;
+  text-decoration: none;
 }
 
 /*
@@ -277,6 +283,56 @@ span.bl-text {
 /*
 * key_programms_content
 */
+.key_programms_content {
+  padding: 155px 0  140px;
+}
+.key_programms_content_item {
+  margin-bottom: 139px;
+  display: table;
+}
+.key_programms_content_item:last-child {
+  margin-bottom: 0;
+}
+.key_programms_content_item__text {
+  color: #000;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: justify;
+}
+.key_programms_content_item__butmorewrap {
+  margin-top: 55px;
+}
+.key_programms_content_item__butmorewrap___click_here {
+  display: inline-block;
+  width: 184px;
+  height: 70px;
+  padding: 9px 0 0 16px;
+  background-image: url("/img/fig20.png");
+  background-repeat: no-repeat;
+  background-size: 184px 70px;
+  background-attachment: scroll;
+  background-position: 0 0;
+  color: #000;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.key_programms_content_item__butmorewrap___click_here:hover, .key_programms_content_item__butmorewrap___click_here:active, .key_programms_content_item__butmorewrap___click_here:focus {
+  text-decoration: none;
+  color: #000;
+}
+.key_programms_content_item__butmorewrap___forknowmore {
+  color: #000;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /*
 * books_of_leonid_bugaev_title
 */
@@ -295,6 +351,45 @@ span.bl-text {
 /*
 * books_of_leonid_bugaev_content
 */
+.books_of_leonid_bugaev_content {
+  padding: 130px 0 85px;
+}
+.books_of_leonid_bugaev_content_item {
+  margin-bottom: 130px;
+  display: table;
+}
+.books_of_leonid_bugaev_content_item:last-child {
+  margin-bottom: 0;
+}
+.books_of_leonid_bugaev_content_item__img {
+  margin: 0 auto;
+}
+.books_of_leonid_bugaev_content_item__title_blue {
+  font-family: "PT Sans Narrow Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #357FBF;
+  font-size: 28px;
+  line-height: 36px;
+}
+.books_of_leonid_bugaev_content_item__title_black {
+  font-family: "PT Sans Narrow Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 24px;
+  line-height: 36px;
+}
+.books_of_leonid_bugaev_content_item__text {
+  margin-top: 30px;
+  color: #000;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: justify;
+}
+
 /*
 * books_of_leonid_bugaev_title
 */
@@ -308,6 +403,68 @@ span.bl-text {
 }
 .reviews_graduates_title_title {
   line-height: 171px;
+}
+
+/*
+* reviews_graduates_content
+*/
+.reviews_graduates_content {
+  padding: 102px 0 50px;
+}
+.reviews_graduates_content .container {
+  overflow: hidden;
+  position: relative;
+}
+.reviews_graduates_content_carousel li {
+  height: auto !important;
+}
+.reviews_graduates_content_carousel_prev {
+  z-index: 999;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 21px;
+  height: 49px;
+  background-image: url("/img/fig26.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: scroll;
+  background-size: 21px 49px;
+  text-indent: -999999px;
+  cursor: pointer;
+}
+.reviews_graduates_content_carousel_next {
+  z-index: 999;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 21px;
+  height: 49px;
+  background-image: url("/img/fig27.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: scroll;
+  background-size: 21px 49px;
+  text-indent: -999999px;
+  cursor: pointer;
+}
+.reviews_graduates_content_item__text {
+  display: table;
+  margin-top: 35px;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+  text-align: justify;
+}
+.reviews_graduates_content_item__who {
+  margin-top: 30px;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #357FBF;
 }
 
 /*
