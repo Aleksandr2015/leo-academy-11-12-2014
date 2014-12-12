@@ -101,23 +101,25 @@
         }
         &__button {
             width: 330px;
-            height: 76px;
+            height: 75px;
             margin-top: 30px;
             background-image: url(/img/fig4.png);
             background-repeat: no-repeat;
-            background-size: 330px 76px;
+            background-size: 330px 75px;
             background-position: 0 0;
             background-attachment: scroll;
-            transition: all .3s ease-in-out;
-            &:hover, &:active, &:focus {
-                background-image: url(/img/fig4-1.png);
-            }
+            transition: all .3s ease-in-out;            
         }        
         &__button input {            
+            background-color: #EAC600;
+            background-image: -moz-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+            background-image: -o-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+            background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+            background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
+            border-radius: 2px;
             border: none;
-            background: transparent;            
             border-radius: none;    
-            height: 44px;
+            height: 45px;
             width: 300px;
             color: #000;
             font-family: "PT Sans Narrow Bold";
@@ -126,8 +128,12 @@
             text-transform: uppercase;
             display: inline-block;
             cursor: pointer;
-            transition: all .3s ease-in-out;
+//            transition: all .3s ease-in-out;
             &:hover, &:active, &:focus {
+                background-image: -moz-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+                background-image: -o-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+                background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+                background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
                 text-shadow: 1px 1px 3px #999;
             }
         }

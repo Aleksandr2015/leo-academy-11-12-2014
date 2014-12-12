@@ -145,8 +145,6 @@ html, body {
   text-transform: uppercase;
   display: inline-block;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
 }
 ._button_cust:hover, ._button_cust:active, ._button_cust:focus {
   background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
@@ -282,24 +280,24 @@ span.bl-text {
 }
 .header_step__button {
   width: 330px;
-  height: 76px;
+  height: 75px;
   margin-top: 30px;
   background-image: url(/img/fig4.png);
   background-repeat: no-repeat;
-  background-size: 330px 76px;
+  background-size: 330px 75px;
   background-position: 0 0;
   background-attachment: scroll;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
-.header_step__button:hover, .header_step__button:active, .header_step__button:focus {
-  background-image: url(/img/fig4-1.png);
-}
 .header_step__button input {
+  background-color: #EAC600;
+  background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+  background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
+  border-radius: 2px;
   border: none;
-  background: transparent;
   border-radius: none;
-  height: 44px;
+  height: 45px;
   width: 300px;
   color: #000;
   font-family: "PT Sans Narrow Bold";
@@ -308,10 +306,10 @@ span.bl-text {
   text-transform: uppercase;
   display: inline-block;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
 }
 .header_step__button input:hover, .header_step__button input:active, .header_step__button input:focus {
+  background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+  background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
   text-shadow: 1px 1px 3px #999;
 }
 
@@ -461,28 +459,36 @@ span.bl-text {
 }
 .key_programms_content_item__butmorewrap___click_here {
   display: inline-block;
-  width: 184px;
+  width: 183px;
   height: 70px;
-  padding: 9px 0 0 16px;
   background-image: url("/img/fig20.png");
   background-repeat: no-repeat;
-  background-size: 184px 70px;
+  background-size: 183px 70px;
   background-attachment: scroll;
   background-position: 0 0;
+}
+.key_programms_content_item__butmorewrap___click_here:hover, .key_programms_content_item__butmorewrap___click_here:active, .key_programms_content_item__butmorewrap___click_here:focus {
+  text-decoration: none;
+  color: #000;
+}
+.key_programms_content_item__butmorewrap___click_here____text {
+  width: 159px;
+  height: 44px;
+  padding: 9px 0 0 16px;
   color: #000;
   font-family: "PT Sans Narrow Bold";
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
+  background-color: #EAC600;
+  background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+  background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
 }
-.key_programms_content_item__butmorewrap___click_here:hover, .key_programms_content_item__butmorewrap___click_here:active, .key_programms_content_item__butmorewrap___click_here:focus {
-  text-decoration: none;
-  color: #000;
+.key_programms_content_item__butmorewrap___click_here____text:hover, .key_programms_content_item__butmorewrap___click_here____text:active, .key_programms_content_item__butmorewrap___click_here____text:focus {
+  background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+  background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
   text-shadow: 1px 1px 3px #999;
-  background-image: url("/img/fig20-1.png");
 }
 .key_programms_content_item__butmorewrap___forknowmore {
   color: #000;

@@ -25,27 +25,41 @@
             margin-top: 55px;
             &___click_here {
                 display: inline-block;
-                width: 184px;
-                height: 70px;
-                padding: 9px 0 0 16px;
+                width: 183px;
+                height: 70px;                
                 background-image: url('/img/fig20.png');
                 background-repeat: no-repeat;
-                background-size: 184px 70px;
+                background-size: 183px 70px;
                 background-attachment: scroll;
-                background-position: 0 0;        
-                color: #000;
-                font-family: "PT Sans Narrow Bold";
-                font-size: 20px;
-                font-weight: 700;
-                text-transform: uppercase;
-                cursor: pointer;
-                transition: all .3s ease-in-out;
+                background-position: 0 0;
                 &:hover, &:active, &:focus {
                     text-decoration: none;
                     color: #000;
-                    text-shadow: 1px 1px 3px #999;
-                    background-image: url('/img/fig20-1.png');
                 }
+                &____text {
+                    width: 159px;
+                    height: 44px;
+                    padding: 9px 0 0 16px;
+                    color: #000;
+                    font-family: "PT Sans Narrow Bold";
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    cursor: pointer;                    
+                    background-color: #EAC600;
+                    background-image: -moz-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+                    background-image: -o-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+                    background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
+                    background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
+                    &:hover, &:active, &:focus {                        
+                        background-image: -moz-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+                        background-image: -o-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+                        background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
+                        background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
+                        text-shadow: 1px 1px 3px #999;
+                    }
+                }
+                
             }
             &___forknowmore {
                 color: #000;
