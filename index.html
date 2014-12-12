@@ -62,7 +62,7 @@
             </div><!-- .row / end -->
             <div class="row header_steps">
                 <!-- import form / start -->
-                <form method="post" novalidate="" enctype="multipart/form-data" action="http://www.formstack.com/forms/index.php" class="fsForm fsSingleColumn" id="fsForm1347103">
+                <form method="post" enctype="multipart/form-data" action="http://www.formstack.com/forms/index.php" class="fsForm fsSingleColumn" id="fsForm1347103">
                     <input type="hidden" name="form" value="1347103">
                     <input type="hidden" name="viewkey" value="zY4q9aV2mU">
                     <input type="hidden" name="hidden_fields" id="hidden_fields1347103" value="">
@@ -96,7 +96,7 @@
                                 о максимальной эффективности:
                             </div>     
                             <div class="header_step__input">
-                               <input type="text" id="field17803699" name="field17803699" size="" value="" class="fsField" placeholder="Ваше имя:">
+                               <input type="text" id="field17803699" name="field17803699" size="" value="" class="fsField" placeholder="Ваше имя:" required>
                             </div>                       
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                                 и получить новые уроки:
                             </div>     
                             <div class="header_step__input">
-                                <input type="email" id="field17803700" name="field17803700" size="" required="required" value="" class="fsField fsFormatEmail fsRequired" aria-required="true" placeholder="Ваш e-mail:">                                
+                                <input type="email" id="field17803700" name="field17803700" size="" value="" class="fsField fsFormatEmail fsRequired" aria-required="true" placeholder="Ваш e-mail:">                                
                             </div>                       
                         </div>
                     </div>
@@ -169,6 +169,7 @@
                         <!-- need button / end-->
                         <div class="clear"></div>
                     </div>
+<!--
                     <script type="text/javascript" src="http://www.formstack.com/forms/js/3/jquery.min.js"></script>
                     <link href="http://www.formstack.com/forms/css/3/jquery-ui.css?20120621" rel="stylesheet" type="text/css">
                     <script type="text/javascript" src="http://www.formstack.com/forms/js/3/jquery-ui.min.js?20121003"></script>
@@ -193,6 +194,7 @@
                     window.form1347103 = form1347103;
                     };
                     </script>    
+-->
                 </form>
                 <!-- import form / end -->
             </div><!-- .row / end -->
@@ -612,7 +614,7 @@
                     </div>
                 </div>
                 <!-- import form / start -->
-                <form method="post" novalidate="" enctype="multipart/form-data" action="http://www.formstack.com/forms/index.php" class="fsForm fsSingleColumn" id="fsForm1347103">
+                <form method="post" enctype="multipart/form-data" action="http://www.formstack.com/forms/index.php" class="fsForm fsSingleColumn" id="fsForm1347103">
                     <input type="hidden" name="form" value="1347103">
                     <input type="hidden" name="viewkey" value="zY4q9aV2mU">
                     <input type="hidden" name="hidden_fields" id="hidden_fields1347103" value="">
@@ -637,7 +639,7 @@
                     <!-- name -->
                     <div class="col-xs-4">                                 
                         <div class="header_step__input">
-                           <input type="text" id="field17803699" name="field17803699" size="" value="" class="fsField" placeholder="Ваше имя:">
+                           <input type="text" id="field17803699" name="field17803699" size="" value="" class="fsField" placeholder="Ваше имя:" required>
                         </div>                        
                     </div>
                     <!-- myinput /end -->
@@ -660,7 +662,7 @@
                     <!-- email -->
                     <div class="col-xs-4">                             
                         <div class="header_step__input">
-                            <input type="email" id="field17803700" name="field17803700" size="" required="required" value="" class="fsField fsFormatEmail fsRequired" aria-required="true" placeholder="Ваш e-mail:">                                
+                            <input type="email" id="field17803700" name="field17803700" size="" value="" class="fsField fsFormatEmail fsRequired" aria-required="true" placeholder="Ваш e-mail:" required>
                         </div>                                               
                     </div>
                     <!-- myinput / end -->
@@ -694,6 +696,7 @@
                         <!-- need button / end-->
                         <div class="clear"></div>
                     </div>
+<!--
                     <script type="text/javascript" src="http://www.formstack.com/forms/js/3/jquery.min.js"></script>
                     <link href="http://www.formstack.com/forms/css/3/jquery-ui.css?20120621" rel="stylesheet" type="text/css">
                     <script type="text/javascript" src="http://www.formstack.com/forms/js/3/jquery-ui.min.js?20121003"></script>
@@ -717,7 +720,8 @@
                     form1347103.plugins.analytics.trackFocus();
                     window.form1347103 = form1347103;
                     };
-                    </script>    
+                    </script>
+-->
                 </form>
                 <!-- import form / end -->
             </div><!-- .row / end -->
@@ -745,6 +749,30 @@
                         <a href="#"><img class="stay_connected_social_icons__icon" src="/img/fig16.png" width="137" height="137" alt=""></a>
                         <a href="#"><img class="stay_connected_social_icons__icon" src="/img/fig17.png" width="137" height="137" alt=""></a>
                     </div>
+                </div>
+                <div class="col-xs-12">
+                    <span class="stay_connected_share">
+                        Поделиться ссылкой:
+                    </span>
+                    <div id="the_share"></div>
+                    <script src="http://yandex.st/share/share.js"></script>
+                    <script>
+                        new Ya.share({
+                            element: 'the_share',
+                            elementStyle: {
+                                'type': 'none',
+                                'quickServices': ['yaru', 'facebook', 'twitter', 'gplus', 'vkontakte']
+                            },
+                            //theme: 'counter ',
+                //            link: 'http://yoursite.com',
+                //            title: 'Your Name - Your site name',
+                //            serviceSpecific: {
+                //                twitter: {
+                //                    title: '@your_twitter_nickname Текст twitter сообщения',
+                //                }
+                //            }            
+                        });
+                    </script>
                 </div>
             </div><!-- .row / end -->
         </div><!-- .container / end -->    

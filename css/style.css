@@ -1,12 +1,58 @@
 /* reset */
 * {
-  outline: none;
+  outline: none !important;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   background: #fff;
+}
+
+/* social share redesign */
+#the_share {
+  text-align: center;
+  display: table;
+}
+
+#the_share .b-share {
+  height: 37px;
+}
+
+#the_share .b-share-icon_yaru,
+#the_share .b-share-icon_vkontakte,
+#the_share .b-share-icon_facebook,
+#the_share .b-share-icon_twitter,
+#the_share .b-share-icon_gplus {
+  width: 140px;
+  height: 37px;
+  display: block;
+  margin-left: 20px;
+  background: url(../img/fig40.jpg) no-repeat;
+}
+
+#the_share .b-share .b-share__handle {
+  padding: 0 !important;
+}
+
+#the_share .b-share-icon_yaru {
+  background-position: 0 -100px;
+}
+
+#the_share .b-share-icon_vkontakte {
+  background-position: -420px 0;
+}
+
+#the_share .b-share-icon_facebook {
+  background-position: 0 0;
+}
+
+#the_share .b-share-icon_twitter {
+  background-position: -140px 0;
+}
+
+#the_share .b-share-icon_gplus {
+  background-position: -280px 0;
 }
 
 /*
@@ -538,7 +584,7 @@ span.bl-text {
 * learn_how_to_build
 */
 .learn_how_to_build {
-  padding: 76px 0 86px;
+  padding: 66px 0 76px;
   background-image: url(../img/fig18.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -562,6 +608,15 @@ span.bl-text {
 */
 .stay_connected {
   padding: 90px 0 80px;
+}
+.stay_connected_share {
+  color: #000;
+  font-family: "PT Sans Narrow Bold";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 37px;
+  float: left;
 }
 .stay_connected_social_icons {
   margin-top: 70px;
