@@ -9,6 +9,58 @@ html, body {
   background: #fff;
 }
 
+/*
+* fancybox
+*/
+/* close button */
+.fancybox-close {
+  width: 20px !important;
+  height: 20px !important;
+  background-image: url(../img/fig37.png) !important;
+  background-size: cover !important;
+  top: 15px !important;
+  right: 15px !important;
+}
+
+/* disable white border and border-radius */
+.fancybox-skin {
+  border-radius: 0;
+  padding: 0 !important;
+}
+
+/* change image caption */
+.fancybox-title-float-wrap .child {
+  font-family: arial !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+  background: none !important;
+  color: #ffbf14 !important;
+  line-height: 1.25 !important;
+}
+
+/* controls redesign */
+.fancybox-prev span {
+  background-image: url(../img/fig38.png) !important;
+  background-position: 0 !important;
+  background-size: cover !important;
+}
+
+.fancybox-next span {
+  background-image: url(../img/fig39.png) !important;
+  background-position: 0 !important;
+  background-size: cover !important;
+}
+
+.fancybox-nav span {
+  width: 23px !important;
+  height: 66px !important;
+  top: 48% !important;
+}
+
+.fancybox-nav span {
+  visibility: visible !important;
+}
+
 /* button style */
 ._button_cust {
   background-color: #EAC600;
@@ -40,6 +92,10 @@ html, body {
   line-height: 44px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+._title_20 {
+  margin-left: 20px !important;
 }
 
 span.bl-text {
@@ -238,7 +294,18 @@ span.bl-text {
   padding-bottom: 75px;
   margin-left: 10px !important;
   margin-right: 10px !important;
+  margin-top: 60px;
   margin-bottom: 93px;
+}
+.academy_of_experts_and_selebs_gallery_hr__text {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: #000;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
 }
 .academy_of_experts_and_selebs_list {
   margin-top: 75px;

@@ -1,0 +1,52 @@
+/*
+* fancybox
+*/
+
+/* close button */
+.fancybox-close {
+    width: 20px !important;
+    height: 20px !important;
+    background-image: url(../img/fig37.png) !important;
+    background-size: cover !important;
+    top: 15px !important;
+    right: 15px !important;
+}
+
+/* disable white border and border-radius */
+.fancybox-skin {
+    border-radius: 0;
+    padding: 0 !important;
+}
+
+/* change image caption */
+.fancybox-title-float-wrap .child {
+    font-family: arial !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    background: none !important;
+    color: #ffbf14 !important;
+    line-height: 1.25 !important;
+}
+
+/* controls redesign */
+.fancybox-prev span {
+    background-image: url(../img/fig38.png) !important;
+    background-position: 0 !important;
+    background-size: cover !important;
+}
+
+.fancybox-next span {
+    background-image: url(../img/fig39.png) !important;
+    background-position: 0 !important;
+    background-size: cover !important;
+}
+
+.fancybox-nav span {
+    width: 23px !important;
+    height: 66px !important;
+    top: 48% !important;
+}
+
+.fancybox-nav span {
+    visibility: visible !important;
+}
