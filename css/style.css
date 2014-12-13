@@ -104,6 +104,15 @@ html, body {
   }
 
   /* leonid_bugaev */
+  .leonid_bugaev_title {
+    text-align: center !important;
+  }
+
+  .leonid_bugaev_button {
+    display: table !important;
+    margin: 25px auto 0 !important;
+  }
+
   /* academy_of_experts_and_selebs */
   .academy_of_experts_and_selebs_title,
   .academy_of_experts_and_selebs_online__title {
@@ -242,7 +251,6 @@ html, body {
     padding: 20px !important;
   }
 
-  /* leonid_bugaev */
   /* academy_of_experts_and_selebs */
   /* key_programms_title */
   /* key_programms_content */
