@@ -63,6 +63,11 @@ html, body {
   #share42 .share42-item {
     margin: 0 20px 0 0 !important;
   }
+
+  /* leonid_bugaev */
+  .leonid_bugaev_img img {
+    max-width: none !important;
+  }
 }
 /* md - Medium devices (desktops, 992px and up) */
 @media all and (max-width: 991px) {
@@ -105,6 +110,14 @@ html, body {
   }
 
   /* leonid_bugaev */
+  .leonid_bugaev_img img {
+    max-width: 100% !important;
+  }
+
+  .leonid_bugaev_img {
+    margin-left: 0 !important;
+  }
+
   .leonid_bugaev_title {
     text-align: center !important;
   }
@@ -178,11 +191,19 @@ html, body {
     float: none !important;
     text-align: center !important;
     display: block !important;
+    margin-bottom: 55px;
+  }
+
+  .share42init {
+    text-align: center !important;
   }
 
   .share42-item {
-    display: block !important;
-    margin: 0 auto 20px !important;
+    margin: 0 20px 20px 0 !important;
+  }
+
+  .share42-item:last-child {
+    margin-right: 0 !important;
   }
 
   .stay_connected_social_icons {
@@ -269,21 +290,29 @@ html, body {
 @media all and (max-width: 645px) {
   .books_of_leonid_bugaev_title_title._title_blue {
     line-height: 50px !important;
+    margin-top: 33px !important;
   }
 }
-@media all and (max-width: 455px) {
-  /* key_programms_title */
-  /* key_programms_title */
-  /* books_of_leonid_bugaev_title */
-  .key_programms_title_title,
-  .key_programms_title_title,
-  .books_of_leonid_bugaev_title_title {
+@media all and (min-width: 471px) {
+  .books_of_leonid_bugaev_title .books_of_leonid_bugaev_title_title {
+    margin-top: 0 !important;
+    line-height: 171px !important;
+  }
+}
+@media all and (max-width: 470px) {
+  .books_of_leonid_bugaev_title_title._title_blue {
     line-height: 50px !important;
     margin-top: 33px !important;
   }
-
+}
+@media all and (max-width: 455px) {
+  .key_programms_title_title,
   .books_of_leonid_bugaev_title_title._title_blue {
-    margin-top: 10px !important;
+    line-height: 50px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    height: 171px !important;
+    text-align: center;
   }
 }
 @media all and (max-width: 410px) {
@@ -309,6 +338,23 @@ html, body {
     margin: 0 auto !important;
     position: relative !important;
     left: 0px !important;
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header_step__input input {
+    width: 80% !important;
+  }
+
+  .learn_how_to_build .header_step__input input {
+    width: 46% !important;
+  }
+}
+@media all and (max-width: 336px) {
+  .share42-item,
+  .share42-item:last-child {
+    display: block !important;
+    margin: 0 auto 20px !important;
   }
 }
 #share42 {
@@ -585,8 +631,6 @@ span.bl-text {
   background-size: 330px 75px;
   background-position: 0 0;
   background-attachment: scroll;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
 }
 .header_step__button input {
   background-color: #EAC600;
@@ -625,7 +669,6 @@ span.bl-text {
 }
 .leonid_bugaev_img img {
   width: 145%;
-  max-width: none !important;
 }
 .leonid_bugaev_title {
   margin-bottom: 45px;
@@ -985,6 +1028,10 @@ span.bl-text {
 }
 .stay_connected_social_icons__icon:hover, .stay_connected_social_icons__icon:active, .stay_connected_social_icons__icon:focus {
   opacity: .8;
+}
+
+#share42 .share42-item .share42-counter {
+  text-align: left !important;
 }
 
 /*
