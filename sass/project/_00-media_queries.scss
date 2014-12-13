@@ -44,6 +44,13 @@
     }
 }
 
+@media all and (min-width: 992px) { 
+    /* stay_connected */
+    #share42 .share42-item {
+        margin: 0 20px 0 0 !important;
+    }
+}
+
 /* md - Medium devices (desktops, 992px and up) */
 @media all and (max-width: 991px) { 
     /* header */
@@ -94,7 +101,9 @@
     }
     
     /* key_programms_title */
-    .key_programms_title_title {
+    /* books_of_leonid_bugaev_title */
+    .key_programms_title_title, 
+    .books_of_leonid_bugaev_title_title {
         text-align: center !important;
     }    
     
@@ -102,6 +111,60 @@
     .key_programms_content_item__text {
         margin-top: 25px !important;
     }
+    
+    .key_programms_content_item__butmorewrap {
+        text-align: center !important;
+    }
+    
+    .key_programms_content_item__butmorewrap___click_here____text {
+        padding-left: 0 !important;
+    }
+    
+    /* reviews_graduates_content */
+    .reviews_graduates_content_item__img {
+        margin: 0 auto !important;
+    }
+    
+    /* learn_how_to_build */
+    .learn_how_to_build_title {
+        text-align: center !important;
+    }
+    
+    .learn_how_to_build .header_step__button {
+        margin-top: 25px !important;
+    }
+    
+    .learn_how_to_build_text {
+        text-align: center;
+    }
+    
+    /* stay_connected*/
+    .stay_connected_title {
+        text-align: center !important;
+    }
+    
+    .stay_connected_share {
+        float: none !important;
+        text-align: center !important;
+        display: block !important;
+    }
+    
+    .share42-item {
+        display: block !important;
+        margin: 0 auto 20px !important;
+    }
+    
+    .stay_connected_social_icons__icon {
+        margin: 0 auto !important;
+        display: table !important;
+        margin-bottom: -52px !important;
+    }
+    
+    /* footer */
+    .footer {
+        text-align: center;
+    }
+    
 }
 
 /* sm - Small devices (tablets, 768px and up) */
@@ -164,13 +227,39 @@
     
     /* key_programms_content */
     
+    /* books_of_leonid_bugaev_content */
+    .books_of_leonid_bugaev_content_item__title_blue,
+    .books_of_leonid_bugaev_content_item__title_black {
+        text-align: center !important;
+    }
+    
+    /* reviews_graduates_content */
+    .reviews_graduates_content_item__img {
+        margin: 0 auto !important;
+    }
+    
 }
+
+@media all and (max-width: 645px) {
+    .books_of_leonid_bugaev_title_title._title_blue {
+        line-height: 50px !important;
+    }
+}
+
 
 @media all and (max-width: 455px) {
     /* key_programms_title */
-    .key_programms_title_title {
+    /* key_programms_title */
+    /* books_of_leonid_bugaev_title */
+    .key_programms_title_title,
+    .key_programms_title_title, 
+    .books_of_leonid_bugaev_title_title {
         line-height: 50px !important;
         margin-top: 33px !important;
+    }
+    
+    .books_of_leonid_bugaev_title_title._title_blue {
+        margin-top: 10px !important;
     }
 }
 
@@ -183,6 +272,11 @@
     .key_programms_content_item__butmorewrap___forknowmore {
         display: block !important;
         text-align: center !important;
+    }
+    
+    /* books_of_leonid_bugaev_content */
+    .books_of_leonid_bugaev_content_item__img {
+        margin-top: 25px !important;
     }
 }
 
