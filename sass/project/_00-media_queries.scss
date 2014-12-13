@@ -32,6 +32,16 @@
     /* leonid_bugaev */
     
     /* academy_of_experts_and_selebs */
+    
+
+}
+
+/* lg-2 - Large devices (large desktops, 1099px and up) */
+@media all and (max-width: 1099px) { 
+    /* key_programms_content */
+    .key_programms_content_item__butmorewrap {
+        margin-top: 25px !important;
+    }
 }
 
 /* md - Medium devices (desktops, 992px and up) */
@@ -82,6 +92,16 @@
         display: table !important;
         margin: 0 auto !important;
     }
+    
+    /* key_programms_title */
+    .key_programms_title_title {
+        text-align: center !important;
+    }    
+    
+    /* key_programms_content */
+    .key_programms_content_item__text {
+        margin-top: 25px !important;
+    }
 }
 
 /* sm - Small devices (tablets, 768px and up) */
@@ -111,6 +131,11 @@
     .academy_of_experts_and_selebs_gallery_hr__img  {
         margin: 0 auto !important;
     }
+    
+    /* key_programms_title */
+    
+    /* key_programms_content */
+    
 }
 
 /* xs - Extra small devices (mobile phones, 767px and down) */
@@ -134,6 +159,31 @@
     /* leonid_bugaev */
     
     /* academy_of_experts_and_selebs */
+    
+    /* key_programms_title */
+    
+    /* key_programms_content */
+    
+}
+
+@media all and (max-width: 455px) {
+    /* key_programms_title */
+    .key_programms_title_title {
+        line-height: 50px !important;
+        margin-top: 33px !important;
+    }
+}
+
+@media all and (max-width: 410px) {
+    /* key_programms_content */
+    .key_programms_content_item__butmorewrap___click_here {
+        display: table !important;
+        margin: 0 auto !important;
+    }
+    .key_programms_content_item__butmorewrap___forknowmore {
+        display: block !important;
+        text-align: center !important;
+    }
 }
 
 @media all and (max-width: 360px) { 
