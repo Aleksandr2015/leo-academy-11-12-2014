@@ -18,34 +18,11 @@
     }
     &_social_icons {
         margin-top: 70px;
-        &__icon {
-            position: relative;
-            margin-left: -59px;
+        margin-bottom: 50px;
+        &__icon {                        
             &:hover, &:active, &:focus {
                 opacity: .8;
             }
         }
-    }
-    &_social_icons a:first-child .stay_connected_social_icons__icon {
-        margin-left: 0;
-        z-index: 1;
-    }
-    &_social_icons a:nth-child(2) .stay_connected_social_icons__icon {        
-        z-index: 2;
-    }
-    &_social_icons a:nth-child(3) .stay_connected_social_icons__icon {        
-        z-index: 3;
-    }
-     &_social_icons a:nth-child(4) .stay_connected_social_icons__icon {        
-        z-index: 4;
-    }
-    &_social_icons a:nth-child(5) .stay_connected_social_icons__icon {        
-        z-index: 5;
-    }
-    &_social_icons a:nth-child(6) .stay_connected_social_icons__icon {        
-        z-index: 6;
-    }
-    &_social_icons a:nth-child(7) .stay_connected_social_icons__icon {        
-        z-index: 7;        
     }
 }
