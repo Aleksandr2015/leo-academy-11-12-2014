@@ -5,10 +5,14 @@
 .books_of_leonid_bugaev_content {
     padding: 130px 0 85px;
     &_item {
-        margin-bottom: 130px;
+        padding-bottom: 65px;
+        margin-bottom: 65px;
+        border-bottom:1px solid #86BAF6;
         display: table;
         &:last-child {
             margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom-width: 0px;
         }
         &__img {
             margin: 0 auto;
@@ -38,5 +42,5 @@
             line-height: 22px;
             text-align: justify;
         }
-    }
+    }    
 }

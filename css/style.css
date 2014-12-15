@@ -141,7 +141,7 @@ html, body {
 
   .fb_iframe_widget {
     display: table !important;
-    margin: 0 auto !important;
+    margin: 25px auto 0 !important;
   }
 
   /* key_programms_title */
@@ -482,7 +482,6 @@ html, body {
 /* button style */
 ._button_cust {
   background-color: #EAC600;
-  background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
   background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
   border-radius: 2px;
   color: #000;
@@ -494,7 +493,6 @@ html, body {
   cursor: pointer;
 }
 ._button_cust:hover, ._button_cust:active, ._button_cust:focus {
-  background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
   background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
   text-shadow: 1px 1px 3px #999;
 }
@@ -634,7 +632,6 @@ span.bl-text {
 }
 .header_step__button input {
   background-color: #EAC600;
-  background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
   background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
   border-radius: 2px;
   border: none;
@@ -650,7 +647,6 @@ span.bl-text {
   cursor: pointer;
 }
 .header_step__button input:hover, .header_step__button input:active, .header_step__button input:focus {
-  background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
   background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
   text-shadow: 1px 1px 3px #999;
 }
@@ -763,6 +759,10 @@ span.bl-text {
   margin-left: 20px;
 }
 
+.fb-like-box {
+  margin-top: 9px;
+}
+
 /*
 * key_programms_title
 */
@@ -832,11 +832,9 @@ span.bl-text {
   text-transform: uppercase;
   cursor: pointer;
   background-color: #EAC600;
-  background-image: -webkit-linear-gradient(bottom, #EAC600 0%, #FBD710 100%);
   background-image: linear-gradient(to top, #EAC600 0%, #FBD710 100%);
 }
 .key_programms_content_item__butmorewrap___click_here____text:hover, .key_programms_content_item__butmorewrap___click_here____text:active, .key_programms_content_item__butmorewrap___click_here____text:focus {
-  background-image: -webkit-linear-gradient(bottom, #FBD710 0%, #EAC600 100%);
   background-image: linear-gradient(to top, #FBD710 0%, #EAC600 100%);
   text-shadow: 1px 1px 3px #999;
 }
@@ -871,11 +869,15 @@ span.bl-text {
   padding: 130px 0 85px;
 }
 .books_of_leonid_bugaev_content_item {
-  margin-bottom: 130px;
+  padding-bottom: 65px;
+  margin-bottom: 65px;
+  border-bottom: 1px solid #86BAF6;
   display: table;
 }
 .books_of_leonid_bugaev_content_item:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom-width: 0px;
 }
 .books_of_leonid_bugaev_content_item__img {
   margin: 0 auto;
