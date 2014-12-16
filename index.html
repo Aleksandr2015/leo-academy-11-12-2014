@@ -36,7 +36,37 @@
     <!-- facebook like-box script / end -->
 
     <!-- header / start -->
-    <header class="header">
+    <header class="header" id="nav-header">
+        <!-- nav -->
+        <div class="nav">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--      <a class="navbar-brand" href="#">Brand</a>-->
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a class="active" href="#nav-header">В начало</a></li>
+                            <li><a href="#nav-about-academy" class="">Об Академии</a></li>
+                            <li><a href="#nav-about-ceo" class="">Об основателе</a></li>
+                            <li><a href="#nav-guests" class="">Гости</a></li>
+                            <li><a href="#nav-programms" class="">Программы</a></li>
+                            <li><a href="#nav-books" class="">Книги</a></li>
+                            <li><a href="#nav-reviews" class="">Отзывы</a></li>
+                            <li><a href="#nav-contacts" class="">Контакты</a></li>						
+                        </ul>
+                    </div><!-- .navbar-collapse / end -->	
+                </div><!-- .container / end -->
+            </nav><! -- .navbar / end -->
+	    </div><!-- .nav / end -->
         <div class="container">
             <div class="row">
                 <!-- header_logo -->
@@ -50,7 +80,7 @@
                     </div>
                 </div>                
             </div><!-- .row / end -->
-            <div class="row">
+            <div class="row" id="nav-about-academy">
                 <!-- get_acquainted -->
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                     <div class="header_get_acquainted">
@@ -217,7 +247,7 @@
     <!-- ---------------------------------------------------- -->
     
     <!-- leonid_bugaev / start -->
-    <section class="leonid_bugaev">
+    <section class="leonid_bugaev" id="nav-about-ceo">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -247,7 +277,7 @@
     <!-- leonid_bugaev / end -->    
     
     <!-- academy_of_experts_and_selebs / start -->
-    <section class="academy_of_experts_and_selebs">
+    <section class="academy_of_experts_and_selebs" id="nav-guests">
         <div class="container">
             <!-- title -->
             <div class="row">
@@ -389,7 +419,7 @@
     <!-- academy_of_experts_and_selebs / end -->
     
     <!-- key_programms_title / start -->
-    <section class="key_programms_title">
+    <section class="key_programms_title" id="nav-programms">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -475,7 +505,7 @@
     <!-- key_programms_content / end -->
     
     <!-- books_of_leonid_bugaev_title / start -->
-    <section class="books_of_leonid_bugaev_title">
+    <section class="books_of_leonid_bugaev_title" id="nav-books">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -553,7 +583,7 @@
     <!-- books_of_leonid_bugaev_content / end -->    
     
     <!-- reviews_graduates_title  / start -->
-    <section class="reviews_graduates_title">
+    <section class="reviews_graduates_title" id="nav-reviews">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -889,5 +919,8 @@
     });
     </script>
     <!-- fancyBox script for this page / end -->
+    
+    <!-- scroll -->
+    <script src="js/scroll.js"></script>
 </body>
 </html>
