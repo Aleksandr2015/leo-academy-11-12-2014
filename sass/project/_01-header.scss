@@ -7,8 +7,11 @@
     background-image: url(../img/fig1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center 20px;
     background-attachment: scroll;
+    &_ltb {
+        margin-bottom: 40px;
+    }
     &_header_logo {
         
     }
@@ -20,33 +23,35 @@
         font-weight: 700;
         text-transform: uppercase;
     }
-    &_get_acquainted {
-        margin-top: 40px;
-        //padding: 70px 80px;
-        padding: 70px 75px;
-        background: #fff;
-        background-color: rgba(255,255,255,.71);
-        &__title {            
-            margin-bottom: 50px;
-            color: #1E71B8;
-            font-family: "PT Sans Narrow Bold";
-            font-size: 44px;
-            line-height: 44px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        &__text p {
-            color: #000;
-            font-family: "PT Sans Narrow";
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: 400;   
-            text-align: justify;
-            &:first-child {
-                margin-bottom: 30px;
-            }
-        }
-    }
+//    &_get_acquainted {
+//        //margin-top: 40px;
+//        //padding: 70px 80px;
+//        //padding: 70px 75px;
+////        height: 375px;
+////        padding: 70px 75px 0 70px;
+////    background: #fff;
+////    background-color: rgba(255,255,255,.71);
+//        &__title {            
+//            margin-bottom: 50px;
+//            color: #1E71B8;
+//            font-family: "PT Sans Narrow Bold";
+//            font-size: 44px;
+//            line-height: 44px;
+//            font-weight: 700;
+//            text-transform: uppercase;
+//        }
+//        &__text p {
+//            color: #000;
+//            font-family: "PT Sans Narrow";
+//            font-size: 16px;
+//            line-height: 20px;
+//            font-weight: 400;   
+//            text-align: justify;
+//            &:first-child {
+//                margin-bottom: 30px;
+//            }
+//        }
+//    }
     &_tv {
         &__img {
             margin: 125px auto 35px;
@@ -139,4 +144,38 @@
         }
         
     }
+}
+
+
+//.carousel-inner>.item {
+//    height: 375px;
+//    background: #fff;
+//    background-color: rgba(255,255,255,.71);
+//}
+
+.carousel-control.left {
+    position: absolute;
+    left:4%;
+    top: 42%;
+    width: 21px;
+    height: 49px;
+    background-image: url('/img/fig45.png');
+    z-index: 999999;
+    text-indent: -9999999px;
+}
+
+.carousel-control.right {
+    position: absolute;
+    right:4%;
+    top: 42%;
+    cursor: pointer;
+    width: 21px;
+    height: 49px;
+    background-image: url('/img/fig44.png');
+    z-index: 999999;
+    text-indent: -9999999px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    margin: 0 auto;
 }
