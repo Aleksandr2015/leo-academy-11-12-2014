@@ -13,27 +13,30 @@ html, body {
   min-height: 40px;
 }
 
+.navbar-nav {
+  float: right;
+}
+
 .navbar-nav > li > a {
   padding: 10px 0;
   font-family: "PT Sans Narrow";
-  font-size: 18px;
-  letter-spacing: .4px;
+  font-size: 14px;
   line-height: 19px;
 }
 
 .navbar-nav > li:not(:first-child) > a {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .navbar-nav > li:not(:first-child):before {
   content: '';
   display: block;
   position: absolute;
-  width: 2px;
-  height: 16px;
+  width: 1px;
+  height: 12px;
   background: #fff;
-  top: 12px;
-  left: 18px;
+  top: 14px;
+  left: 10px;
 }
 
 .navbar-inverse {
@@ -46,13 +49,13 @@ html, body {
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #F9EDAB;
+  color: #9ABBD6;
 }
 
 .navbar-inverse .navbar-nav a.active,
 .navbar-inverse .navbar-nav a.active:hover,
 .navbar-inverse .navbar-nav a.active:focus {
-  color: #F9D50E;
+  color: #2786D6;
 }
 
 /* new media brackpoint for collapsed nav */
@@ -162,6 +165,11 @@ html, body {
   /* key_programms_content */
   .key_programms_content_item__butmorewrap {
     margin-top: 25px !important;
+  }
+
+  /* .footer_contacts */
+  .footer_contacts_item__images img:first-child {
+    margin-bottom: 10px;
   }
 }
 /* md-2 - Medium devices (desktops, 992px and up) */
@@ -321,6 +329,24 @@ html, body {
   .footer {
     text-align: center !important;
   }
+
+  /* footer-contacts */
+  .footer_contacts_item {
+    text-align: center !important;
+  }
+
+  .footer_contacts_item__images {
+    margin-top: 20px;
+  }
+
+  .footer_contacts_item__images img:first-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* footer_copyright */
+  .footer_copyright {
+    text-align: center;
+  }
 }
 /* sm - Small devices (tablets, 768px and up) */
 @media all and (max-width: 768px) {
@@ -462,6 +488,11 @@ html, body {
   .share42-item:last-child {
     display: block !important;
     margin: 0 auto 20px !important;
+  }
+}
+@media all and (max-width: 321px) {
+  .footer_contacts_item__images img:first-child {
+    margin-bottom: 10px !important;
   }
 }
 #share42 {
@@ -1166,8 +1197,57 @@ span.bl-text {
   color: #D3D6D8;
 }
 .footer_links__divider {
-  margin-left: 15px;
+  margin-left: 11px;
+  margin-right: 6px;
+  position: relative;
+  top: -1px;
+}
+
+/*
+* footer_contacts
+*/
+.footer_contacts {
+  background: #d9d9d9;
+}
+.footer_contacts_item {
+  padding: 30px 0 40px;
+}
+.footer_contacts_item__text {
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+}
+.footer_contacts_item__text___blue {
+  color: #1E71B8;
+}
+.footer_contacts_item__images {
+  margin-top: 4px;
+}
+.footer_contacts_item__images :first-child {
   margin-right: 10px;
+}
+.footer_contacts_divider {
+  height: 1px;
+  background-color: #C2C2C2;
+  border: none !important;
+  margin: 0;
+}
+
+/*
+* footer_copyright
+*/
+.footer_copyright {
+  background: #d9d9d9;
+}
+.footer_copyright_text {
+  padding: 30px 0 40px;
+  color: #000;
+  font-family: "PT Sans Narrow";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

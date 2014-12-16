@@ -42,6 +42,11 @@
     .key_programms_content_item__butmorewrap {
         margin-top: 25px !important;
     }
+    
+    /* .footer_contacts */
+    .footer_contacts_item__images img:first-child {
+        margin-bottom: 10px;
+    }
 }
 
 /* md-2 - Medium devices (desktops, 992px and up) */
@@ -194,6 +199,24 @@
     /* footer */
     .footer {
         text-align: center !important;
+    }
+    
+    /* footer-contacts */
+    .footer_contacts_item {
+        text-align: center !important;
+    }
+    
+    .footer_contacts_item__images {
+        margin-top: 20px;
+    }
+    
+    .footer_contacts_item__images img:first-child {
+        margin-bottom: 0 !important;
+    }
+    
+    /* footer_copyright */
+    .footer_copyright {
+        text-align: center;
     }
     
 }
@@ -362,4 +385,9 @@
     }
 }
 
+@media all and (max-width: 321px) {
+    .footer_contacts_item__images img:first-child {
+        margin-bottom: 10px !important;
+    }
+}
 

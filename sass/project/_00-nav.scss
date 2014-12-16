@@ -2,27 +2,30 @@
     min-height: 40px;
 }
 
+.navbar-nav {
+    float: right;
+}
+
 .navbar-nav>li>a{
     padding: 10px 0;
     font-family: "PT Sans Narrow";
-    font-size: 18px;
-    letter-spacing: .4px;
+    font-size: 14px;
     line-height: 19px;
 }
 
 .navbar-nav>li:not(:first-child)>a{
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .navbar-nav>li:not(:first-child):before{
     content: '';
     display: block;
     position: absolute;
-    width: 2px;
-    height: 16px;
+    width: 1px;
+    height: 12px;
     background: #fff;
-    top: 12px;
-    left: 18px;
+    top: 14px;
+    left: 10px;
 }
 
 .navbar-inverse{
@@ -34,28 +37,28 @@
 }
 
 // blue
-//.navbar-inverse .navbar-nav>li>a:hover,
-//.navbar-inverse .navbar-nav>li>a:focus {
-//    color: #86BAF6;
-//}
-//
-//.navbar-inverse .navbar-nav a.active,
-//.navbar-inverse .navbar-nav a.active:hover,
-//.navbar-inverse .navbar-nav a.active:focus {
-//    color: #1E71B8;
-//}
-
-// yellow
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus {
-    color: #F9EDAB;    
+    color: #9ABBD6;
 }
 
 .navbar-inverse .navbar-nav a.active,
 .navbar-inverse .navbar-nav a.active:hover,
 .navbar-inverse .navbar-nav a.active:focus {
-    color: #F9D50E;
+    color: #2786D6;
 }
+
+//// yellow
+//.navbar-inverse .navbar-nav>li>a:hover,
+//.navbar-inverse .navbar-nav>li>a:focus {
+//    color: #F9EDAB;    
+//}
+//
+//.navbar-inverse .navbar-nav a.active,
+//.navbar-inverse .navbar-nav a.active:hover,
+//.navbar-inverse .navbar-nav a.active:focus {
+//    color: #F9D50E;
+//}
 
 
 /* new media brackpoint for collapsed nav */
