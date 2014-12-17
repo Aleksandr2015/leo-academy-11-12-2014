@@ -405,6 +405,14 @@ html, body {
     padding: 20px !important;
   }
 
+  .carousel-control.left {
+    left: 4% !important;
+  }
+
+  .carousel-control.right {
+    right: 4% !important;
+  }
+
   /* academy_of_experts_and_selebs */
   /* key_programms_title */
   /* key_programms_content */
@@ -767,7 +775,7 @@ span.bl-text {
 
 .carousel-control.left {
   position: absolute;
-  left: 4%;
+  left: -5%;
   top: 42%;
   width: 21px;
   height: 49px;
@@ -778,7 +786,7 @@ span.bl-text {
 
 .carousel-control.right {
   position: absolute;
-  right: 4%;
+  right: -5%;
   top: 42%;
   cursor: pointer;
   width: 21px;
