@@ -778,7 +778,7 @@ span.bl-text {
   width: 330px;
   height: 75px;
   margin-top: 24px;
-  background-image: url(/img/fig4.png);
+  background-image: url(../img/fig4.png);
   background-repeat: no-repeat;
   background-size: 330px 75px;
   background-position: 0 0;
@@ -811,7 +811,7 @@ span.bl-text {
   top: 42%;
   width: 21px;
   height: 49px;
-  background-image: url("/img/fig45.png");
+  background-image: url("../img/fig45.png");
   z-index: 999999;
   text-indent: -9999999px;
 }
@@ -823,7 +823,7 @@ span.bl-text {
   cursor: pointer;
   width: 21px;
   height: 49px;
-  background-image: url("/img/fig44.png");
+  background-image: url("../img/fig44.png");
   z-index: 999999;
   text-indent: -9999999px;
 }
@@ -924,7 +924,7 @@ span.bl-text {
   font-family: "PT Sans Narrow";
   font-size: 16px;
   font-weight: 400;
-  background-image: url("/img/fig6.png");
+  background-image: url("../img/fig6.png");
   background-repeat: no-repeat;
   background-position: 5% center;
   padding-left: 70px;
@@ -996,7 +996,7 @@ span.bl-text {
   display: inline-block;
   width: 183px;
   height: 70px;
-  background-image: url("/img/fig20.png");
+  background-image: url("../img/fig20.png");
   background-repeat: no-repeat;
   background-size: 183px 70px;
   background-attachment: scroll;
@@ -1130,7 +1130,7 @@ span.bl-text {
   left: 0;
   width: 21px;
   height: 49px;
-  background-image: url("/img/fig26.png");
+  background-image: url("../img/fig26.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-attachment: scroll;
@@ -1145,7 +1145,7 @@ span.bl-text {
   right: 0;
   width: 21px;
   height: 49px;
-  background-image: url("/img/fig27.png");
+  background-image: url("../img/fig27.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-attachment: scroll;
@@ -1156,7 +1156,7 @@ span.bl-text {
 .reviews_graduates_content_item__img_shadow {
   width: 303px;
   height: 315px;
-  background-image: url("/img/fig25-1.png");
+  background-image: url("../img/fig25-1.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-attachment: scroll;
