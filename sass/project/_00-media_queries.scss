@@ -26,8 +26,11 @@
     .header_step__input {
         text-align: center !important;
     }
+    .header_step__text._text-second {
+        margin-top: 113px !important;
+    }    
     .header_step__cover img {
-        margin: 93px auto !important;
+        margin: -14px auto !important;
     }
     /* leonid_bugaev */
     
@@ -93,6 +96,9 @@
     .header_step__input input {
         text-align: center !important;
         padding: 13px 0 11px 0 !important;
+    }
+    .header_step__cover img {
+        margin: 30px auto 30px 80px !important;
     }
     
     /* leonid_bugaev */
@@ -272,6 +278,14 @@
     }    
     .header_get_acquainted {
         padding: 20px !important;
+    }
+    
+    .header_step__text._text-second {
+        margin-top: 56px !important;
+    }
+    
+    .header_step__cover img {
+        margin: 30px auto !important;
     }
     
     .carousel-control.left {

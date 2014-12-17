@@ -103,12 +103,12 @@
             font-weight: 400;
         }
         &__cover img {
-            margin: 66px auto;
+            margin-top: -111px;
         }
         &__button {
             width: 330px;
             height: 75px;
-            margin-top: 30px;
+            margin-top: 24px;
             background-image: url(/img/fig4.png);
             background-repeat: no-repeat;
             background-size: 330px 75px;
@@ -178,4 +178,9 @@
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     margin: 0 auto;
+}
+
+/* sevond input styles in header */
+.header_step__text._text-second {
+    margin-top: 56px;
 }

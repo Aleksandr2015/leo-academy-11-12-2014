@@ -152,8 +152,12 @@ html, body {
     text-align: center !important;
   }
 
+  .header_step__text._text-second {
+    margin-top: 113px !important;
+  }
+
   .header_step__cover img {
-    margin: 93px auto !important;
+    margin: -14px auto !important;
   }
 
   /* leonid_bugaev */
@@ -221,6 +225,10 @@ html, body {
   .header_step__input input {
     text-align: center !important;
     padding: 13px 0 11px 0 !important;
+  }
+
+  .header_step__cover img {
+    margin: 30px auto 30px 80px !important;
   }
 
   /* leonid_bugaev */
@@ -403,6 +411,14 @@ html, body {
 
   .header_get_acquainted {
     padding: 20px !important;
+  }
+
+  .header_step__text._text-second {
+    margin-top: 56px !important;
+  }
+
+  .header_step__cover img {
+    margin: 30px auto !important;
   }
 
   .carousel-control.left {
@@ -740,12 +756,12 @@ span.bl-text {
   font-weight: 400;
 }
 .header_step__cover img {
-  margin: 66px auto;
+  margin-top: -111px;
 }
 .header_step__button {
   width: 330px;
   height: 75px;
-  margin-top: 30px;
+  margin-top: 24px;
   background-image: url(/img/fig4.png);
   background-repeat: no-repeat;
   background-size: 330px 75px;
@@ -798,6 +814,11 @@ span.bl-text {
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   margin: 0 auto;
+}
+
+/* sevond input styles in header */
+.header_step__text._text-second {
+  margin-top: 56px;
 }
 
 /*
