@@ -159,6 +159,10 @@
     .reviews_graduates_content_item__img {
         margin: 0 auto !important;
     }
+    .reviews_graduates_content_item__img_shadow {
+        margin: 0 auto !important;
+    }
+    
     
     /* learn_how_to_build */
     .learn_how_to_build_title {
@@ -376,6 +380,18 @@
     /* books_of_leonid_bugaev_content */
     .books_of_leonid_bugaev_content_item__img {
         margin-top: 25px !important;
+    }
+}
+
+@media all and (max-width: 395px) {
+    .reviews_graduates_content_item__img_shadow {
+        background-image: none !important;
+    }
+    .reviews_graduates_content_item__img_shadow___img {
+        position: static !important;;
+        left: none !important;;
+        top: none !important;
+        margin: 0 auto !important;  
     }
 }
 

@@ -44,8 +44,22 @@
         }        
     }
     &_item {        
-        &__img {
-            
+        &__img_shadow {
+            width: 303px;
+            height: 315px;
+            background-image: url('/img/fig25-1.png');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-attachment: scroll;
+            background-size: 303px 315px;
+            position: relative;            
+            &___img {
+                width: 220px;
+                height: 220px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
         }
         &__text {
             display: table;

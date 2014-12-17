@@ -291,6 +291,10 @@ html, body {
     margin: 0 auto !important;
   }
 
+  .reviews_graduates_content_item__img_shadow {
+    margin: 0 auto !important;
+  }
+
   /* learn_how_to_build */
   .learn_how_to_build_title {
     text-align: center !important;
@@ -486,6 +490,18 @@ html, body {
   /* books_of_leonid_bugaev_content */
   .books_of_leonid_bugaev_content_item__img {
     margin-top: 25px !important;
+  }
+}
+@media all and (max-width: 395px) {
+  .reviews_graduates_content_item__img_shadow {
+    background-image: none !important;
+  }
+
+  .reviews_graduates_content_item__img_shadow___img {
+    position: static !important;
+    left: none !important;
+    top: none !important;
+    margin: 0 auto !important;
   }
 }
 @media all and (max-width: 360px) {
@@ -1136,6 +1152,23 @@ span.bl-text {
   background-size: 21px 49px;
   text-indent: -999999px;
   cursor: pointer;
+}
+.reviews_graduates_content_item__img_shadow {
+  width: 303px;
+  height: 315px;
+  background-image: url("/img/fig25-1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: scroll;
+  background-size: 303px 315px;
+  position: relative;
+}
+.reviews_graduates_content_item__img_shadow___img {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .reviews_graduates_content_item__text {
   display: table;
