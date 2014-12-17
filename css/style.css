@@ -1211,6 +1211,9 @@ span.bl-text {
   font-family: "PT Sans Narrow Bold";
   font-weight: 400;
 }
+.learn_how_to_build .header_step__button {
+  margin-top: 30px;
+}
 
 /*
 * stay_connected
